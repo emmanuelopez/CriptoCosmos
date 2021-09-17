@@ -1,0 +1,129 @@
+.fondoBody{
+    background-color: rgb(210, 245, 245);
+    
+    .academia{
+        display: flex;
+        flex-direction: column;
+        margin:5rem auto 3rem;
+    
+        .academia__titulo{
+            color:rgb(19, 88, 19);
+            text-align: center;
+            margin: 2rem 0;
+        }
+    
+        .academia__texto{
+            text-align: center;
+            font-size: 2rem;
+            font-family: cursive;
+            font-weight: 500;
+        }
+    }
+    
+    .carrusel{
+        width: 800px;
+        margin: 3rem auto;
+
+        @media(max-width:768px) and (min-width:550px){
+            &{
+                width: 600px;
+            }
+        }
+        @media(max-width:550px){
+            &{
+                width: 400px;
+            }
+        }    
+    
+        .carrusel__imagen{
+            width: 800px;
+            
+            @media(max-width:768px) and (min-width:550px){
+                &{
+                    width: 600px;
+                }
+            }
+            @media(max-width:550px){
+                &{
+                    width: 400px;
+                }
+            }    
+        }
+    
+        .carrusel__texto{
+            font-size: 3rem;
+            color: $colorSecundario;
+            margin-bottom: 10rem;
+
+            @media(max-width:768px) and (min-width:550px){
+                &{
+                   font-size: 2.5rem; 
+                }
+            }
+            @media(max-width:550px){
+                &{
+                    font-size: 2rem;
+                }
+            }    
+        }
+    }
+    
+    .terminosCripto {
+        width: 70%;
+        margin:5rem auto 3rem; 
+        text-align: center;
+    }
+    
+    .conceptos {
+        background-color: rgb(174, 235, 250);
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        box-shadow: 0px 0px 20px 0px rgba(252, 2, 2, 0.4);
+        width: 90%;
+        margin:auto;
+
+        @media(max-width:768px) and (min-width:550px){
+            &{
+                grid-template-columns: repeat(2, 320px);
+                grid-template-rows: repeat(2, 1150px);
+                justify-content: space-around;
+            }
+        }
+        @media(max-width:550px){
+            &{
+                grid-template-columns: 320px;
+                grid-template-rows: (900px, 1000px, 1500px, 800px);
+                justify-content: space-around;
+            }
+        }    
+    
+        .container{
+            display:flex;
+            flex-direction: column;
+            margin:1rem auto;
+    
+            .conceptos__titulo{
+                text-align: center;
+                align-items: center;
+            }
+            .conceptos__imagen{
+                width: 280px;
+                height: 168px;
+                margin:1rem;
+                padding:1rem;
+            }
+            .conceptos__texto{
+                font-size: 1.4rem;
+                color:black;
+                letter-spacing: 0;
+                width: 300px;
+                text-align: justify;
+                align-items: center;
+                padding:1rem;
+            }
+        }
+    }
+}
+
+
+

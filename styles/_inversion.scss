@@ -1,0 +1,81 @@
+.bannerInversion{
+    width: 100%;
+    height: 600px;
+    background-image: url('../imagenes/arbolcriptocomp.jpg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .bannerInversion__titulo{
+        font-size: 3rem;
+        color:rgb(130, 240, 198);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    .bannerInversion__texto{
+        font-size: 4rem;
+        color: rgb(255,255,255);
+        padding:2rem;
+        margin-bottom: 30rem;
+        text-align: center;
+    }
+}
+.seccionInversion {
+    display:flex;
+    flex-direction: column;
+    margin:4rem 2rem;
+    padding:4rem 1rem;
+    justify-content: space-around;
+    align-items: center;
+    
+    .seccionInversion__titulo {
+        color:rgb(9, 3, 100);
+        font-size: 2.2rem;
+        text-align: center;
+        margin:2rem auto;
+    }    
+    .seccionInversion__texto {
+        color:rgba(12, 3, 133, 0.637);
+        width: 80%;
+        text-align: justify;
+        font-size: 2.5rem;    
+    }
+}
+
+.listaInversion {
+    display:flex;
+    flex-direction: row;
+    list-style-type:none;
+    width:100%;
+    justify-content: space-evenly;
+    margin:3rem auto;
+    align-items: center;
+
+    @media(max-width:768px) and (min-width:550px){
+        &{
+           flex-wrap: wrap; 
+        }
+    }
+    @media(max-width:550px){
+        &{
+           flex-direction: column; 
+        }
+    }    
+    
+    .opcionInversion {
+        border:double 3px rgb(41, 248, 0);
+        color:rgb(197, 240, 253);
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 2rem 1rem;
+        margin-top: 3rem;
+        width: 20rem;
+        background-color: tomato;
+        text-align: center;
+        box-shadow: 1px 1px 10px 0 rebeccapurple;
+    }
+}

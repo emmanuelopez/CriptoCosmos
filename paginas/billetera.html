@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta rel="canonical" content="https://criptocosmos.com/">
+    <meta type="description" content="Disponemos de billetera digital multi-monedas para que puedas resguardar tus criptos. Tambien podes recibir y enviar criptos a quien quieras.">
+    <meta type="keywords" content="Criptomonedas, Inversion, Billetera digital, Guarda tus Criptos, Deposita y retira Criptomonedas.">
+    <meta property="og:title" content="CriptoCosmos - Educacion e inversion en Criptomonedas">
+    <meta property="og:image" content="Imagenes/cohete.jpg">
+    <meta property="og:description" content="Criptomonedas, Inversion, Billetera digital, Guarda tus Criptos, Deposita y retira Criptomonedas.">
+    <meta property="og:url" content="https://criptocosmos.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/bd51cd8889.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Billetera - El lugar mas seguro para guardar tus criptos</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-ligth py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="../index.html">
+          <img src="../imagenes/cohete1.png" alt="dibujo cohete" class="logo__imagen animate__animated animate__fadeInBottomLeft">
+          <h1 class="logo__titulo animate__animated animate__lightSpeedInRight">CriptoCosmos</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle ms-5" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+          <button type="button" class="btn btn-primary position-relative ms-1 fs-5">
+            Login
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>  
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-3 mx-5 listaenlaces">
+            <li class="nav-item mx-3 listaenlaces__item animate__animated animate__fadeIn">
+              <a class="nav-link listaenlaces__link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item mx-3 listaenlaces__item animate__animated animate__fadeIn">
+              <a class="nav-link listaenlaces__link" href="academia.html">Academia</a>
+            </li>
+            <li class="nav-item mx-3 listaenlaces__item animate__animated animate__fadeIn">
+              <a class="nav-link listaenlaces__link" href="mercado.html">Mercado</a>
+            </li>
+            <li class="nav-item mx-3 listaenlaces__item animate__animated animate__fadeIn">
+              <a class="nav-link listaenlaces__link" href="billetera.html">Billetera</a>
+            </li>
+            <li class="nav-item mx-3 listaenlaces__item animate__animated animate__fadeIn">
+              <a class="nav-link listaenlaces__link" href="inversion.html">Inversion</a>
+            </li>
+            <li class="nav-item mx-3 listaenlaces__item animate__animated animate__fadeIn">
+              <a class="nav-link listaenlaces__link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="billeteraVirtual">
+    <seccion class="billetera">
+      <h2 class="billetera__titulo">Billetera</h2>
+      <div class="billetera__banner">
+        <p>Criptocosmos te ofrece el servicio de Billetera Virtual, para que guardes tus criptos de la manera mas segura. Desde la misma 
+          podes ver facilmente la cantidad de monedas que tenes y su valor equivalente en dolares. Tambien podes hacer retiros y recibir 
+          depositos de la manera mas segura y confiable.
+        </p>
+      </div>
+    </seccion>
+    <!--se muestra tabla que representa la billetera de criptomonedas-->
+    <section>
+      <h3 class="activos">Tus Activos</h3>
+      <div class="tabla">
+        <div class="referencia">Moneda</div>
+        <div class="referencia">Disponible</div>
+        <div class="referencia">Valor</div>
+        <div class="referencia">Accion</div>
+        <div class="referencia">Accion</div>
+        <div class="modulob">
+          <img alt="bitcoin (BTC)" data-src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579" 
+          data-srcset="https://assets.coingecko.com/coins/images/1/thumb_2x/bitcoin.png?1547033579 2x" 
+          src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579" 
+          srcset="https://assets.coingecko.com/coins/images/1/thumb_2x/bitcoin.png?1547033579 2x" loading="lazy">
+          <p>Bitcoin</p>
+        </div>
+        <div class="moduloa">0</div>
+        <div class="moduloa">0US$</div>
+        <div class="moduloa">Depositar</div>
+        <div class="moduloa">Retirar</div>
+        <div class="modulob">
+          <img alt="ethereum (ETH)" data-src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880" 
+          data-srcset="https://assets.coingecko.com/coins/images/279/thumb_2x/ethereum.png?1595348880 2x" 
+          src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880" 
+          srcset="https://assets.coingecko.com/coins/images/279/thumb_2x/ethereum.png?1595348880 2x" loading="lazy">
+          <p>Ethereum</p>
+        </div>
+        <div class="moduloa">0</div>
+        <div class="moduloa">0US$</div>
+        <div class="moduloa">Depositar</div>
+        <div class="moduloa">Retirar</div>
+        <div class="modulob">
+          <img alt="cardano (ADA)" data-src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860" 
+          data-srcset="https://assets.coingecko.com/coins/images/975/thumb_2x/cardano.png?1547034860 2x" 
+          src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860" 
+          srcset="https://assets.coingecko.com/coins/images/975/thumb_2x/cardano.png?1547034860 2x" loading="lazy">
+          <p>Cardano</p>
+        </div>
+        <div class="moduloa">0</div>
+        <div class="moduloa">0US$</div>
+        <div class="moduloa">Depositar</div>
+        <div class="moduloa">Retirar</div>
+        <div class="modulob">
+          <img alt="binance coin (BNB)" data-src="https://assets.coingecko.com/coins/images/825/thumb/binance-coin-logo.png?1547034615" 
+          data-srcset="https://assets.coingecko.com/coins/images/825/thumb_2x/binance-coin-logo.png?1547034615 2x" 
+          src="https://assets.coingecko.com/coins/images/825/thumb/binance-coin-logo.png?1547034615" 
+          srcset="https://assets.coingecko.com/coins/images/825/thumb_2x/binance-coin-logo.png?1547034615 2x" loading="lazy">
+          <p>Binance Coin</p>
+        </div>
+        <div class="moduloa">0</div>
+        <div class="moduloa">0US$</div>
+        <div class="moduloa">Depositar</div>
+        <div class="moduloa">Retirar</div>
+        <div class="modulob">
+          <img alt="tether (USDT)" data-src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707" 
+          data-srcset="https://assets.coingecko.com/coins/images/325/thumb_2x/Tether-logo.png?1598003707 2x" 
+          src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707" 
+          srcset="https://assets.coingecko.com/coins/images/325/thumb_2x/Tether-logo.png?1598003707 2x"loading="lazy" >
+          <p>Tether</p>
+        </div>
+        <div class="moduloa">0</div>
+        <div class="moduloa">0US$</div>
+        <div class="moduloa">Depositar</div>
+        <div class="moduloa">Retirar</div>
+      </div>
+    </section>
+  </main>
+    
+  <!-- Footer -->
+  <footer class="footer">
+    <nav class="container">
+      <ul class="navFooter">
+        <li class="navFotter__items">Soporte</li>
+        <li class="navFotter__items">Servicios</li>
+        <li class="navFotter__items">Comunidad</li>
+      </ul>
+    </nav>
+    <div class="redsocial">
+      <i class="fab fa-facebook boton--facebook redes"></i>
+      <i class="fab fa-instagram boton--instagram redes"></i>
+      <i class="fab fa-twitter boton--twitter redes"></i>
+    </div>
+    <br/>
+    <p>Creado por Emmanuel Lopez 19/07/2021</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

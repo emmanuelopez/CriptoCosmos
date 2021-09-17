@@ -1,0 +1,105 @@
+@mixin flex ($direction, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+$colores: (
+    facebook:  rgb(13, 13, 252),
+    instagram: #ec7716,
+    twitter: #55acee
+);
+
+.footer{
+    background: rgb(248,248,248);
+    background: linear-gradient(0deg, rgba(248,248,248,1) 1%, rgba(183,239,254,0.9671218829328606) 28%, rgba(148,244,253,1) 55%, rgba(116,123,248,1) 99%);
+
+    .container{
+        width: 100%;
+        
+        .navFooter{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 75%;
+            justify-items: center;
+            list-style-type: none;
+            margin:2rem auto 1rem;
+            padding: 2rem;
+            
+            .navFotter__items{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color:rgb(2, 3, 83);
+                padding:1rem;
+                margin:1rem;
+                border:rgba(39, 84, 180, 0.747) 3px solid;
+                border-radius: 1rem;
+                text-align: center;
+                max-width:150px;
+                min-width:130px;
+                background-color: rgb(100, 184, 240);
+                transform: scale(1,1);
+                transition: transform 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.1,1.1);
+                    background-color:rgb(66, 239, 241);
+                    color: crimson;
+                }
+            }
+        }
+    }
+}
+.redsocial{
+    @include flex(row, flex-end, center, nowrap);
+
+    @each $redes, $bgcolor in $colores {
+        .boton--#{$redes} {
+        background-color: $bgcolor;
+        }
+    }
+    .redes{
+        font-size: 30px;
+        margin-right: 8px;
+        padding:2px;
+    }
+}
+
+@media(max-width:768px){
+    .navFooter{
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;    
+    }
+    .navFooter li{
+        min-width: 130px;
+    }
+    .navFooter li:nth-of-type(1){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .navFooter li:nth-of-type(2){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .navFooter li:nth-of-type(3){
+        grid-column: 2/3;
+        grid-row: 3/4;
+    } 
+    
+    .redsocial{
+        @include flex(row, center, center, nowrap);
+    
+        @each $redes, $bgcolor in $colores {
+            .boton--#{$redes} {
+            background-color: $bgcolor;
+            }
+        }
+        .redes{
+            font-size: 30px;
+            margin-right: 8px;
+            padding:2px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+//Variables
+
+$colorPrimario: rgb(0, 7, 73);
+$colorSecundario: rgb(32, 241, 231);
+$fuentesTitulos: 'Exo', sans-serif;
+$fuentesTexto: 'Monserrat', sans-serif;
+$size: 500px;
+$time: 0.2s;
+
+//Reset
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+//Ajustes Generales
+
+html{
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $fuentesTitulos;
+    color: $colorPrimario;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+label{
+    font-family: $fuentesTitulos;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: red;
+}
+
+p, a{
+    font-family: $fuentesTexto;
+    font-size: 1.6rem;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color: $colorPrimario;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+li{
+    list-style-type: none;
+}
+.container{
+    max-width: $size * 2.8;
+    margin: 0 auto;
+}
