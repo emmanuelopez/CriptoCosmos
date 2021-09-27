@@ -6,15 +6,9 @@
     flex-wrap: $wrap;
 }
 
-$colores: (
-    facebook:  rgb(13, 13, 252),
-    instagram: #ec7716,
-    twitter: #55acee
-);
-
 .footer{
-    background: rgb(248,248,248);
-    background: linear-gradient(0deg, rgba(248,248,248,1) 1%, rgba(183,239,254,0.9671218829328606) 28%, rgba(148,244,253,1) 55%, rgba(116,123,248,1) 99%);
+    background-color: rgb(53, 129, 250);
+    padding: 3rem 0;
 
     .container{
         width: 100%;
@@ -25,21 +19,20 @@ $colores: (
             width: 75%;
             justify-items: center;
             list-style-type: none;
-            margin:2rem auto 1rem;
+            margin:2rem auto;
             padding: 2rem;
             
             .navFotter__items{
                 font-size: 1.5rem;
                 text-transform: uppercase;
-                color:rgb(2, 3, 83);
+                color:rgb(255, 255, 255);
                 padding:1rem;
                 margin:1rem;
-                border:rgba(39, 84, 180, 0.747) 3px solid;
                 border-radius: 1rem;
                 text-align: center;
                 max-width:150px;
                 min-width:130px;
-                background-color: rgb(100, 184, 240);
+                background-color: rgba(24, 226, 253, 0.493);
                 transform: scale(1,1);
                 transition: transform 0.5s ease;
 
@@ -53,18 +46,25 @@ $colores: (
     }
 }
 .redsocial{
-    @include flex(row, flex-end, center, nowrap);
+    @include flex(row, space-evenly, center, nowrap);
+    width: 20%;
+    margin:1rem auto;
 
-    @each $redes, $bgcolor in $colores {
-        .boton--#{$redes} {
-        background-color: $bgcolor;
-        }
-    }
     .redes{
-        font-size: 30px;
-        margin-right: 8px;
-        padding:2px;
+        font-size: 25px;
+        padding:10px;
+        color: white;
+        border-radius: 10px;
+        background-color: rgba(89, 151, 250, 0.877);
     }
+}
+
+.footer__texto{
+    font-size: 1.2rem;
+    color:white;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    text-align: center;
 }
 
 @media(max-width:768px){
@@ -90,16 +90,5 @@ $colores: (
     
     .redsocial{
         @include flex(row, center, center, nowrap);
-    
-        @each $redes, $bgcolor in $colores {
-            .boton--#{$redes} {
-            background-color: $bgcolor;
-            }
-        }
-        .redes{
-            font-size: 30px;
-            margin-right: 8px;
-            padding:2px;
-        }
     }
 }

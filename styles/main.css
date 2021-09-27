@@ -134,9 +134,8 @@ li {
 }
 
 .footer {
-  background: #f8f8f8;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #f8f8f8), color-stop(28%, rgba(183, 239, 254, 0.967122)), color-stop(55%, #94f4fd), color-stop(99%, #747bf8));
-  background: linear-gradient(0deg, #f8f8f8 1%, rgba(183, 239, 254, 0.967122) 28%, #94f4fd 55%, #747bf8 99%);
+  background-color: #3581fa;
+  padding: 3rem 0;
 }
 
 .footer .container {
@@ -151,22 +150,21 @@ li {
   width: 75%;
   justify-items: center;
   list-style-type: none;
-  margin: 2rem auto 1rem;
+  margin: 2rem auto;
   padding: 2rem;
 }
 
 .footer .container .navFooter .navFotter__items {
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #020353;
+  color: white;
   padding: 1rem;
   margin: 1rem;
-  border: rgba(39, 84, 180, 0.747) 3px solid;
   border-radius: 1rem;
   text-align: center;
   max-width: 150px;
   min-width: 130px;
-  background-color: #64b8f0;
+  background-color: rgba(24, 226, 253, 0.493);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -190,32 +188,32 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-}
-
-.redsocial .boton--facebook {
-  background-color: #0d0dfc;
-}
-
-.redsocial .boton--instagram {
-  background-color: #ec7716;
-}
-
-.redsocial .boton--twitter {
-  background-color: #55acee;
+  width: 20%;
+  margin: 1rem auto;
 }
 
 .redsocial .redes {
-  font-size: 30px;
-  margin-right: 8px;
-  padding: 2px;
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(89, 151, 250, 0.877);
+}
+
+.footer__texto {
+  font-size: 1.2rem;
+  color: white;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -269,20 +267,6 @@ li {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-  .redsocial .boton--facebook {
-    background-color: #0d0dfc;
-  }
-  .redsocial .boton--instagram {
-    background-color: #ec7716;
-  }
-  .redsocial .boton--twitter {
-    background-color: #55acee;
-  }
-  .redsocial .redes {
-    font-size: 30px;
-    margin-right: 8px;
-    padding: 2px;
   }
 }
 
@@ -652,7 +636,7 @@ li {
 }
 
 .fondoMercado {
-  background-color: rgba(231, 248, 202, 0.726);
+  background-color: #fcfcfc;
   -webkit-box-shadow: 1px 1px 10px 0 #5a1b99;
           box-shadow: 1px 1px 10px 0 #5a1b99;
   margin: 1rem;
@@ -674,8 +658,8 @@ li {
       grid-template-columns: 20% 40% 40%;
   -ms-grid-rows: (60px)[8];
       grid-template-rows: repeat(8, 60px);
-  margin: 4rem 2rem;
-  width: 100%;
+  margin: 4rem 1rem;
+  width: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -855,7 +839,7 @@ li {
 }
 
 .fondoBody .carrusel {
-  width: 800px;
+  width: 100%;
   margin: 3rem auto;
 }
 
@@ -872,7 +856,7 @@ li {
 }
 
 .fondoBody .carrusel .carrusel__imagen {
-  width: 800px;
+  width: 100%;
 }
 
 @media (max-width: 768px) and (min-width: 550px) {
@@ -983,10 +967,7 @@ li {
 }
 
 .billeteraVirtual {
-  background: #f8f8f8;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #f8f8f8), color-stop(28%, rgba(183, 239, 254, 0.967122)), color-stop(55%, #94f4fd), color-stop(99%, #74f8ba));
-  background: linear-gradient(0deg, #f8f8f8 1%, rgba(183, 239, 254, 0.967122) 28%, #94f4fd 55%, #74f8ba 99%);
-  width: 100%;
+  background-color: white;
 }
 
 .billeteraVirtual .billetera {
@@ -1043,7 +1024,7 @@ li {
   width: 70%;
   text-align: justify;
   font-size: 2.5rem;
-  color: #f1f1f1;
+  color: #0d09fa;
   letter-spacing: 4px;
 }
 

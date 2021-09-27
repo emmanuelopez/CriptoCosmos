@@ -1,7 +1,6 @@
 .billeteraVirtual{
-    background: rgb(248,248,248);
-    background: linear-gradient(0deg, rgba(248,248,248,1) 1%, rgba(183,239,254,0.9671218829328606) 28%, rgba(148,244,253,1) 55%, rgba(116,248,186,1) 99%);  
-    width:100%;
+      
+    background-color: white;
 
     .billetera{
         display:flex;
@@ -42,7 +41,7 @@
                 width:70%;
                 text-align: justify;
                 font-size: 2.5rem;
-                color: #f1f1f1;
+                color: #0d09fa;
                 letter-spacing: 4px;
             }
             @media(max-width:768px) and (min-width:550px){

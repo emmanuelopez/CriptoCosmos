@@ -21,7 +21,7 @@
     }
     
     .carrusel{
-        width: 800px;
+        width: 100%;
         margin: 3rem auto;
 
         @media(max-width:768px) and (min-width:550px){
@@ -36,7 +36,7 @@
         }    
     
         .carrusel__imagen{
-            width: 800px;
+            width: 100%;
             
             @media(max-width:768px) and (min-width:550px){
                 &{
