@@ -11,6 +11,7 @@
         margin-top: 5rem;
         padding:3rem 0;
     }
+
     .grilla{
         display:grid;
         grid-template-columns: 20% 40% 40%;
@@ -18,6 +19,8 @@
         margin:4rem 1rem;
         width: auto;
         justify-content: center;
+        justify-items: center;
+        align-items: center;
         gap:10px;
 
         @media(max-width:1024px) and (min-width:768px){
@@ -33,27 +36,52 @@
                 grid-template-rows: repeat(9,60px);
             }
         }
+
+        @media(max-width:550px){
+            &{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(5,60px); 
+            }
+        }
     
         .grilla__titulo{
             justify-self: center;
+            align-self: center;
 
-            @media(max-width:1024px) and (min-width:768px){
-                &{
-                    grid-column: 1/2;
-                    grid-row: 1/2;
-                }
-            }
             .grilla__boton{
                 font-size: 3rem;
                 color: darkblue;
                 justify-self: center;
+                box-shadow: 2px 2px 4px 0 rgb(32, 3, 61);
+
+                @media(max-width:1024px) and (min-width:768px){
+                    &{
+                        font-size: 2.4rem;
+                        width: 130px;
+                    }
+                }
+                
+                @media(max-width:768px) and (min-width:550px){
+                    &{
+                        font-size: 2.3rem;
+                        width: 120px;
+                    }
+                }
+                
+                @media(max-width:550px){
+                    &{
+                        font-size: 2.1rem;
+                        width: 110px;
+                    }
+                }
             }
         }
+
         .grilla__par{
-            font-size: 1.8rem;
             text-transform: uppercase;
             padding:1rem;
             box-shadow: 1px 1px 10px 0 rebeccapurple;
+            border-radius: 5px;
             width: 130px;
             background-color: rgba(105, 105, 105, 0.349);
             justify-self: center;
@@ -63,6 +91,7 @@
                 &{
                     grid-column: 1/2;
                     grid-row: 9/10;
+                    width: 110px;
                 }
             }
             
@@ -70,39 +99,61 @@
                 &{
                     grid-column: 1/2;
                     grid-row: 9/10;
+                    width: 90px;
+                }
+            }
+            
+            @media(max-width:550px){
+                &{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    width: 80px;
                 }
             }
         
             p{
                 text-align: center;
+
+                @media(max-width:1024px) and (min-width:768px){
+                    &{
+                        font-size: 1.5rem;
+                    }
+                }
+                @media(max-width:768px) and (min-width:550px){
+                    &{
+                       font-size: 1.4rem;
+                    }
+                }
+                @media(max-width:550px){
+                    &{
+                       font-size: 1.3rem; 
+                    }
+                }
             }
         
             &:hover{
                 background-color: blue;
             }
         }
+
         .grilla__subtitulo{
             font-size: 1.7rem;
             text-transform: capitalize;
             justify-self: center;
             align-self: center;
 
-            @media(max-width:1024px) and (min-width:768px){
+            @media(max-width:1024px){
                 &{
                     display:none;
                 }
             }
-            @media(max-width:768px) and (min-width:550px){
-                &{
-                    display:none;
-                }
-            }
-    
+
             h4{
                color: dodgerblue;
                letter-spacing: 0px;
             }
         }
+
         .grilla__menu{
             font-size: 1.8rem;
             text-transform: uppercase;
@@ -113,21 +164,51 @@
             width:150px;
             background-color: rgba(112, 180, 98, 0.329);
             justify-self: center;
+            
+            @media(max-width:1024px) and (min-width:768px){
+                &{
+                    width:130px;
+                }
+            }
+
+            @media(max-width:768px) and (min-width:550px){
+                &{
+                   width:110px;
+                }
+            }
+
+            @media(max-width:550px){
+                &{
+                   display:none; 
+                }
+            }
     
             p{
                 text-align: center;
+
+                @media(max-width:1024px) and (min-width:768px){
+                    &{
+                        font-size: 1.5rem;
+                        
+                    }
+                }
+                @media(max-width:768px) and (min-width:550px){
+                    &{
+                       font-size: 1.4rem;
+                    }
+                }
             }
         
             &:hover{
                 background-color: rgba(112, 180, 98, 0.753);
             }
         }
+
         .grilla__grafico{
             width: 700px;
             height: 400px;
             grid-column: 2 / 4;
             grid-row:  2 / 8;
-            justify-self: center;
 
             @media(max-width:1024px) and (min-width:768px){
                 &{
@@ -144,11 +225,21 @@
                     grid-row: 4 / span 6;
                 }
             }
+
+            @media(max-width:550px){
+                &{
+                    width: 380px;
+                    height: 230px;
+                    grid-column: 1 / span 2;
+                    grid-row: 2 / span 3;
+                }
+            }
     
             .grafico{
                 width: 100%;
             }
         }
+
         .grilla__operar1{
             justify-self: center;
 
@@ -168,7 +259,13 @@
                 }
             }
 
-        
+            @media(max-width:550px){
+                &{
+                    grid-column: 1 / 2;
+                    grid-row: 5 / 6;
+                    align-self: center;
+                }
+            }
     
             .boton1{
                 width: 120px;
@@ -185,8 +282,30 @@
                 &:hover{
                     background-color: green; 
                 }
+
+                @media(max-width:1024px) and (min-width:768px){
+                    &{
+                        font-size: 1.5rem;
+                        width: 110px;
+                    }
+                }
+                
+                @media(max-width:768px) and (min-width:550px){
+                    &{
+                        font-size: 1.4rem;
+                        width: 90px;
+                    }
+                }
+                
+                @media(max-width:550px){
+                    &{
+                        font-size: 1.3rem;
+                        width: 80px;
+                    }
+                }
             }
         }
+
         .grilla__operar2{
             justify-self: center;
 
@@ -205,6 +324,14 @@
                     align-self: center; 
                 }
             }
+
+            @media(max-width:550px){
+                &{
+                    grid-column: 2 / 3;
+                    grid-row: 5 / 6;
+                    align-self: center;
+                }
+            }
     
             .boton2{
                 width: 100px;
@@ -221,6 +348,27 @@
     
                 &:hover{
                     background-color:red; 
+                }
+
+                @media(max-width:1024px) and (min-width:768px){
+                    &{
+                        font-size: 1.5rem;
+                        width: 110px;
+                    }
+                }
+                
+                @media(max-width:768px) and (min-width:550px){
+                    &{
+                        font-size: 1.4rem;
+                        width: 90px;
+                    }
+                }
+                
+                @media(max-width:550px){
+                    &{
+                        font-size: 1.3rem;
+                        width: 80px;
+                    }
                 }
             }
         }
