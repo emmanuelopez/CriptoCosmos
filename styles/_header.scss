@@ -2,19 +2,76 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(208,248,245,1) 30%, rgba(29,248,198,1) 60%, rgba(0,17,250,1) 100%);
     
-    .logo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .Logo{
 
-        .logo__imagen{
-            width:6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+
+        @media(max-width:1024px) and (min-width:769px){
+            &{
+                width: 65%;
+                justify-content: space-between;
+            }
         }
-        .logo__titulo{
-            font-size: 32px;
-            font-weight: 600;
-            text-transform: capitalize;
-            color: rgb(0, 0, 78) !important;
+
+        @media(max-width:768px) and (min-width:550px){
+            &{
+               width:75%;
+               justify-content: space-evenly;
+            }
+        }
+
+        @media(max-width:550px){
+            &{
+               width: 100%; 
+            }
+        }
+        
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            .logo__imagen{
+                width:5rem;
+
+                @media(max-width:550px){
+                    &{
+                       width: 4rem; 
+                    }
+                }
+            }
+            .logo__titulo{
+                font-size: 32px;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: rgb(0, 0, 100);
+
+                @media(max-width:550px){
+                    &{
+                       font-size: 25px; 
+                    }
+                }
+            }
+        }
+    }
+
+    .menu{
+        font-size: 1.7rem;
+        background-color: rgba(32, 65, 173, 0.973);
+
+        @media(max-width:768px){
+            &{
+               margin:auto;
+            }
+        }
+
+        @media(max-width:550px){
+            &{
+               font-size: 1.4rem; 
+            }
         }
     }
         
