@@ -24,7 +24,7 @@ label {
 }
 
 p, a {
-  font-family: "Monserrat", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
   margin: 0;
 }
@@ -449,27 +449,46 @@ li {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  background: #f8f8f8;
-  background: radial-gradient(circle, #f8f8f8 1%, rgba(183, 239, 254, 0.967122) 28%, #94f4fd 55%, #74f8ba 99%);
   justify-items: center;
-  margin: 1rem 1rem;
+  margin: 10rem 1rem;
   padding: 4rem 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
   gap: 0.5rem;
 }
 
 .articulos .articulos__card {
   width: 70%;
-  border: blue 2px solid;
   text-align: justify;
   height: 100%;
   border-radius: 1rem;
   padding: 2rem;
-  background-color: rgba(22, 223, 223, 0.808);
+  background-color: rgba(22, 223, 223, 0.281);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.articulos .articulos__card:nth-of-type(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.articulos .articulos__card:nth-of-type(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.articulos .articulos__card:nth-of-type(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.articulos .articulos__card:nth-of-type(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .articulos .articulos__card .articulos__titulo {
@@ -479,9 +498,8 @@ li {
 }
 
 .articulos .articulos__card .articulos__texto {
-  color: #00492d;
-  font-size: 1.4rem;
-  letter-spacing: 0.2rem;
+  color: #6f7774;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 1250px) {
@@ -956,8 +974,18 @@ li {
   background-color: #fcfcfc;
   -webkit-box-shadow: 1px 1px 10px 0 #5a1b99;
           box-shadow: 1px 1px 10px 0 #5a1b99;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fondoMercado .titulo {
@@ -965,7 +993,7 @@ li {
   color: rgba(14, 7, 7, 0.637);
   text-align: center;
   margin-top: 5rem;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -987,6 +1015,8 @@ li {
 }
 
 .fondoMercado .grilla {
+  -ms-grid-column-align: center;
+      justify-self: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 40% 40%;
@@ -994,7 +1024,8 @@ li {
   -ms-grid-rows: (70px)[8];
       grid-template-rows: repeat(8, 70px);
   margin: 4rem 1rem;
-  width: auto;
+  padding: 1rem;
+  width: 90vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1029,6 +1060,7 @@ li {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (70px)[5];
         grid-template-rows: repeat(5, 70px);
+    width: 85vw;
   }
 }
 
@@ -1222,8 +1254,8 @@ li {
 }
 
 .fondoMercado .grilla .grilla__grafico {
-  max-width: 900px;
-  max-height: 500px;
+  width: 60vw;
+  height: 50vh;
   padding: 1rem;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -1235,6 +1267,7 @@ li {
 
 .fondoMercado .grilla .grilla__grafico .grafico {
   width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -1245,13 +1278,13 @@ li {
     -ms-grid-row: 3;
     -ms-grid-row-span: 6;
     grid-row: 3 / span 6;
+    width: 85vw;
+    height: 50vh;
   }
 }
 
 @media (max-width: 768px) and (min-width: 550px) {
   .fondoMercado .grilla .grilla__grafico {
-    max-width: 700px;
-    max-height: 390px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / span 3;
@@ -1261,13 +1294,13 @@ li {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 85vw;
+    height: 45vh;
   }
 }
 
 @media (max-width: 550px) {
   .fondoMercado .grilla .grilla__grafico {
-    max-width: 500px;
-    max-height: 280px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
@@ -1277,6 +1310,8 @@ li {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 80vw;
+    height: 30vh;
   }
 }
 
@@ -1424,7 +1459,6 @@ li {
       align-self: center;
   text-transform: uppercase;
   padding: 1rem;
-  margin: 0 4rem;
   border-radius: 5px;
   font-size: 1.5rem;
   color: black;
@@ -1617,75 +1651,134 @@ li {
   background-color: white;
 }
 
-.billeteraVirtual .billetera {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 2rem;
-}
-
-.billeteraVirtual .billetera .billetera__titulo {
-  margin: 2rem 0;
-  text-align: center;
-  font-size: 3rem;
-  text-transform: capitalize;
-  color: indianred;
-}
-
-.billeteraVirtual .billetera .billetera__banner {
-  width: 100%;
-  height: 800px;
-  background-image: url("../imagenes/wallet.jpg");
-  background-position: center center;
-  background-size: cover;
+.billeteraVirtual .seccionBilletera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 6rem 2rem;
 }
 
-@media (max-width: 768px) and (min-width: 550px) {
-  .billeteraVirtual .billetera .billetera__banner {
-    width: auto;
-    height: 650px;
+@media (max-width: 768px) {
+  .billeteraVirtual .seccionBilletera {
+    margin: 6rem 1rem;
   }
 }
 
 @media (max-width: 550px) {
-  .billeteraVirtual .billetera .billetera__banner {
-    width: auto;
-    height: 500px;
+  .billeteraVirtual .seccionBilletera {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-.billeteraVirtual .billetera .billetera__banner p {
-  width: 70%;
+.billeteraVirtual .seccionBilletera .seccionBilletera__imagen {
+  display: inline-block;
+  position: relative;
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .billeteraVirtual .seccionBilletera .seccionBilletera__imagen {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .billeteraVirtual .seccionBilletera .seccionBilletera__imagen {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.billeteraVirtual .seccionBilletera .seccionBilletera__imagen .imagenWallet {
+  width: auto;
+  height: 100%;
+  margin-left: -120px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .billeteraVirtual .seccionBilletera .seccionBilletera__imagen .imagenWallet {
+    margin-left: -90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .billeteraVirtual .seccionBilletera .seccionBilletera__imagen .imagenWallet {
+    margin-left: -60px;
+  }
+}
+
+.billeteraVirtual .seccionBilletera .billetera {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.billeteraVirtual .seccionBilletera .billetera .billetera__titulo {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #5c8dcd;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .billeteraVirtual .seccionBilletera .billetera .billetera__titulo {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 550px) {
+  .billeteraVirtual .seccionBilletera .billetera .billetera__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .billeteraVirtual .seccionBilletera .billetera .billetera__titulo {
+    font-size: 2.3rem;
+  }
+}
+
+.billeteraVirtual .seccionBilletera .billetera .billetera__texto {
+  width: 40vw;
   text-align: justify;
   font-size: 2.5rem;
-  color: #0d09fa;
-  letter-spacing: 4px;
+  color: #373658;
+  margin: 1rem 4rem;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .billeteraVirtual .seccionBilletera .billetera .billetera__texto {
+    font-size: 2.2rem;
+    margin: 1rem 3rem;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 550px) {
-  .billeteraVirtual .billetera .billetera__banner p {
-    letter-spacing: 2px;
-    font-size: 2rem;
+  .billeteraVirtual .seccionBilletera .billetera .billetera__texto {
+    font-size: 1.8rem;
+    margin: 1rem 2rem;
   }
 }
 
 @media (max-width: 550px) {
-  .billeteraVirtual .billetera .billetera__banner p {
-    letter-spacing: normal;
-    font-size: 1.8rem;
+  .billeteraVirtual .seccionBilletera .billetera .billetera__texto {
+    width: 60vw;
+    font-size: 1.6rem;
+    margin: 1rem;
   }
 }
 
@@ -1725,7 +1818,7 @@ li {
 
 @media (max-width: 550px) {
   .tabla {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -1738,16 +1831,50 @@ li {
   text-align: center;
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+  .tabla .referencia {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 550px) {
+  .tabla .referencia {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .tabla .referencia {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
 .tabla .moduloa {
   padding: 1rem;
   border: #1f1f1f 2px solid;
   height: auto;
   font-size: 1.5rem;
-  text-align: right;
+  text-align: center;
 }
 
-.tabla .moduloa p {
-  font-size: 2px;
+@media (max-width: 1024px) and (min-width: 768px) {
+  .tabla .moduloa {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 550px) {
+  .tabla .moduloa {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .tabla .moduloa {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
 }
 
 .tabla .modulob {
@@ -1767,6 +1894,24 @@ li {
   font-size: 1.7rem;
   color: #312f2f;
   margin-left: 1rem;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .tabla .modulob p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 550px) {
+  .tabla .modulob p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .tabla .modulob p {
+    font-size: 1.2rem;
+  }
 }
 
 .bannerInversion {

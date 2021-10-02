@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/bd51cd8889.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -26,7 +26,7 @@
   <!-- Header -->
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-ligth py-3">
-      <div class="container-fluid">
+      <div class="container-fluid navBar">
         <a class="navbar-brand Logo" href="index.html">
           <div class="logo">
             <img src="../imagenes/cohete1.png" alt="dibujo cohete" class="logo__imagen animate__animated animate__fadeInBottomLeft">
@@ -52,22 +52,22 @@
         <div class="collapse navbar-collapse listaEnlaces" id="navbarNav">
           <ul class="navbar-nav ms-auto fs-3 mx-5">
             <li class="nav-item mx-1 listaEnlaces__item animate__animated animate__fadeIn">
-              <a class="nav-link listaEnlaces__link active" aria-current="page" href="./index.html">Inicio</a>
+              <a class="nav-link listaEnlaces__link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item mx-1 listaEnlaces__item animate__animated animate__fadeIn">
-              <a class="nav-link listaEnlaces__link" href="./paginas/academia.html">Academia</a>
+              <a class="nav-link listaEnlaces__link" href="academia.html">Academia</a>
             </li>
             <li class="nav-item mx-1 listaEnlaces__item animate__animated animate__fadeIn">
-              <a class="nav-link listaEnlaces__link" href="./paginas/mercado.html">Mercado</a>
+              <a class="nav-link listaEnlaces__link" href="mercado.html">Mercado</a>
             </li>
             <li class="nav-item mx-1 listaEnlaces__item animate__animated animate__fadeIn">
-              <a class="nav-link listaEnlaces__link" href="./paginas/billetera.html">Billetera</a>
+              <a class="nav-link listaEnlaces__link" href="billetera.html">Billetera</a>
             </li>
             <li class="nav-item mx-1 listaEnlaces__item animate__animated animate__fadeIn">
-              <a class="nav-link listaEnlaces__link" href="./paginas/inversion.html">Inversion</a>
+              <a class="nav-link listaEnlaces__link" href="inversion.html">Inversion</a>
             </li>
             <li class="nav-item mx-1 listaEnlaces__item animate__animated animate__fadeIn">
-              <a class="nav-link listaEnlaces__link" href="./paginas/contacto.html">Contacto</a>
+              <a class="nav-link listaEnlaces__link" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -76,13 +76,15 @@
   </header>
   
   <main class="billeteraVirtual">
-    <seccion class="billetera">
-      <h2 class="billetera__titulo">Billetera</h2>
-      <div>
-        <img src="../imagenes/wallet.jpg" class="billetera__imagen" alt="foto billetera">
-        <p>Criptocosmos te ofrece el servicio de Billetera Virtual, para que guardes tus criptos de la manera mas segura. Desde la misma 
-            podes ver facilmente la cantidad de monedas que tenes y su valor equivalente en dolares. Tambien podes hacer retiros y recibir 
-            depositos de la manera mas segura y confiable.</p>
+    <seccion class="seccionBilletera">
+      <div class="seccionBilletera__imagen">
+        <img src="../imagenes/wallet.jpg" class="imagenWallet" alt="foto billetera">
+      </div>
+      <div class="billetera">
+        <h2 class="billetera__titulo">Billetera</h2>
+        <p class="billetera__texto">Criptocosmos te ofrece el servicio de Billetera Virtual, para que guardes tus criptos de la manera mas segura. Desde la misma 
+        podes ver facilmente la cantidad de monedas que tenes y su valor equivalente en dolares. Tambien podes hacer retiros y recibir 
+        depositos de la manera mas segura y confiable.</p>
       </div>
     </seccion>
     <!--se muestra tabla que representa la billetera de criptomonedas-->
@@ -99,7 +101,7 @@
           data-srcset="https://assets.coingecko.com/coins/images/1/thumb_2x/bitcoin.png?1547033579 2x" 
           src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579" 
           srcset="https://assets.coingecko.com/coins/images/1/thumb_2x/bitcoin.png?1547033579 2x" loading="lazy">
-          <p>Bitcoin</p>
+          <p>BTC</p>
         </div>
         <div class="moduloa">0</div>
         <div class="moduloa">0US$</div>
@@ -110,7 +112,7 @@
           data-srcset="https://assets.coingecko.com/coins/images/279/thumb_2x/ethereum.png?1595348880 2x" 
           src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880" 
           srcset="https://assets.coingecko.com/coins/images/279/thumb_2x/ethereum.png?1595348880 2x" loading="lazy">
-          <p>Ethereum</p>
+          <p>ETH</p>
         </div>
         <div class="moduloa">0</div>
         <div class="moduloa">0US$</div>
@@ -121,7 +123,7 @@
           data-srcset="https://assets.coingecko.com/coins/images/975/thumb_2x/cardano.png?1547034860 2x" 
           src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860" 
           srcset="https://assets.coingecko.com/coins/images/975/thumb_2x/cardano.png?1547034860 2x" loading="lazy">
-          <p>Cardano</p>
+          <p>ADA</p>
         </div>
         <div class="moduloa">0</div>
         <div class="moduloa">0US$</div>
@@ -132,7 +134,7 @@
           data-srcset="https://assets.coingecko.com/coins/images/825/thumb_2x/binance-coin-logo.png?1547034615 2x" 
           src="https://assets.coingecko.com/coins/images/825/thumb/binance-coin-logo.png?1547034615" 
           srcset="https://assets.coingecko.com/coins/images/825/thumb_2x/binance-coin-logo.png?1547034615 2x" loading="lazy">
-          <p>Binance Coin</p>
+          <p>BNB</p>
         </div>
         <div class="moduloa">0</div>
         <div class="moduloa">0US$</div>

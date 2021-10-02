@@ -53,23 +53,33 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    background: rgb(248,248,248);
-    background: radial-gradient(circle, rgba(248,248,248,1) 1%, rgba(183,239,254,0.9671218829328606) 28%, rgba(148,244,253,1) 55%, rgba(116,248,186,1) 99%);
     justify-items: center;
-    margin: 1rem 1rem;
+    margin: 10rem 1rem;
     padding: 4rem 1rem;
     align-items: center;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
     gap:0.5rem;
 
     .articulos__card{
         width: 70%;
-        border: blue 2px solid;
         text-align: justify;
         height: 100%;
         border-radius: 1rem;
         padding:2rem;
-        background-color: rgba(22, 223, 223, 0.808);
+        background-color: rgba(22, 223, 223, 0.281);
+        transition: transform 0.5s ease;
+
+        &:nth-of-type(1){
+            animation-delay: $time;
+        }
+        &:nth-of-type(2){
+            animation-delay: $time * 2;
+        }
+        &:nth-of-type(3){
+            animation-delay: $time * 3;
+        }
+        &:nth-of-type(4){
+            animation-delay: $time * 4;
+        }
 
         .articulos__titulo{
             text-align: center;
@@ -78,9 +88,8 @@
         }
         
         .articulos__texto{
-            color:rgb(0, 73, 45);
-            font-size: 1.4rem;
-            letter-spacing: 0.2rem;
+            color:rgb(111, 119, 116);
+            font-size: 1.8rem;
         }
     }
 }
