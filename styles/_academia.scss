@@ -7,70 +7,105 @@
         margin:5rem auto 3rem;
     
         .academia__titulo{
-            color:rgb(19, 88, 19);
+            color:rgb(30, 89, 179);
             text-align: center;
             margin: 2rem 0;
-        }
-    
-        .academia__texto{
-            text-align: center;
-            font-size: 2rem;
-            font-family: cursive;
-            font-weight: 500;
-        }
-    }
-    
-    .carrusel{
-        width: 100%;
-        margin: 3rem auto;
+            padding: 1.3rem;
+            font-size: 4rem;
 
-        @media(max-width:768px) and (min-width:550px){
-            &{
-                width: 600px;
+            @media(max-width:1024px) and (min-width:768px){
+                &{
+                    font-size: 3.5rem;
+                }
             }
-        }
-        @media(max-width:550px){
-            &{
-                width: 400px;
-            }
-        }    
-    
-        .carrusel__imagen{
-            width: 100%;
-            
             @media(max-width:768px) and (min-width:550px){
                 &{
-                    width: 600px;
+                    font-size: 3rem;
                 }
             }
             @media(max-width:550px){
                 &{
-                    width: 400px;
+                    font-size: 2.5rem;
                 }
-            }    
+            }
+        }
+    
+        .academia__texto{
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 500;
+            padding: 2rem;
+
+            @media(max-width:1024px) and (min-width:768px){
+                &{
+                    font-size: 2.3rem;
+                }
+            }
+            @media(max-width:768px) and (min-width:550px){
+                &{
+                    font-size: 2rem;
+                }
+            }
+            @media(max-width:550px){
+                &{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    
+    .carrusel{
+        width: 70vw;
+        margin: 3rem auto;
+
+        @media(max-width:1024px) and (min-width:768px){
+            &{
+                width: 80vw;
+            }
+        }
+        @media(max-width:768px) and (min-width:550px){
+            &{
+                width: 85vw;
+            }
+        }
+        @media(max-width:550px){
+            &{
+                width: 90vw;
+            }
+        }    
+    
+        .carrusel__imagen{
+            width: 100%;    
         }
     
         .carrusel__texto{
-            font-size: 3rem;
-            color: $colorSecundario;
-            margin-bottom: 10rem;
+            font-size: 4rem;
+            color: #f1f1f1;
+            background-color: rgba(95, 158, 160, 0.363);
+            width: auto;
 
+            @media(max-width:1024px) and (min-width:768px){
+                &{
+                    font-size: 3.5rem;
+                }
+            }
             @media(max-width:768px) and (min-width:550px){
                 &{
-                   font-size: 2.5rem; 
+                    font-size: 2.5rem;
                 }
             }
             @media(max-width:550px){
                 &{
                     font-size: 2rem;
                 }
-            }    
+            }
         }
     }
     
     .terminosCripto {
-        width: 70%;
-        margin:5rem auto 3rem; 
+        color: rgb(30, 89, 179);
+        margin: 5rem auto 3rem;
+        padding: 2rem;
         text-align: center;
     }
     
@@ -82,10 +117,17 @@
         width: 90%;
         margin:auto;
 
+        @media(max-width:1024px) and (min-width:768px){
+            &{
+                grid-template-columns: repeat(2, 320px);
+                grid-template-rows: repeat(2, 1200px);
+                justify-content: space-evenly;
+            }
+        }
         @media(max-width:768px) and (min-width:550px){
             &{
                 grid-template-columns: repeat(2, 320px);
-                grid-template-rows: repeat(2, 1150px);
+                grid-template-rows: repeat(2, 1200px);
                 justify-content: space-around;
             }
         }

@@ -1,7 +1,7 @@
 .header{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(208,248,245,1) 30%, rgba(29,248,198,1) 60%, rgba(0,17,250,1) 100%);
-    
+
     .Logo{
 
         display: flex;
@@ -70,7 +70,8 @@
 
         @media(max-width:550px){
             &{
-               font-size: 1.4rem; 
+               font-size: 1.4rem;
+               margin-top: 2rem; 
             }
         }
     }

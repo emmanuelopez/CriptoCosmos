@@ -20,13 +20,11 @@
                 font-size: 2.4rem;
             }
         }
-        
         @media(max-width:768px) and (min-width:550px){
             &{
                 font-size: 2.3rem;
             }
         }
-        
         @media(max-width:550px){
             &{
                 font-size: 2.1rem;
@@ -193,13 +191,11 @@
                     width:140px;
                 }
             }
-
             @media(max-width:768px) and (min-width:550px){
                 &{
                    width:120px;
                 }
             }
-
             @media(max-width:550px){
                 &{
                    display:none; 
@@ -247,17 +243,15 @@
                     height: 50vh;
                 }
             }
-
             @media(max-width:768px) and (min-width:550px){
                 &{
                     grid-column: 1 / span 3 ;
                     grid-row: 4 / span 5;
                     align-self: center;
                     width: 85vw;
-                    height: 45vh;
+                    height: 40vh;
                 }
             }
-
             @media(max-width:550px){
                 &{
                     grid-column: 1 / span 2;
@@ -265,6 +259,15 @@
                     align-self: center;
                     width: 80vw;
                     height: 30vh;
+                }
+            }
+            @media(max-width:400px){
+                &{
+                    grid-column: 1 / span 2;
+                    grid-row: 2 / span 3;
+                    align-self: center;
+                    width: 80vw;
+                    height: 25vh;
                 }
             }
         }
@@ -279,7 +282,6 @@
                     align-self: center;
                 }
             }
-
             @media(max-width:768px) and (min-width:550px){
                 &{
                     grid-column: 2/3;
@@ -287,7 +289,6 @@
                     align-self: center; 
                 }
             }
-
             @media(max-width:550px){
                 &{
                     grid-column: 1 / 2;
@@ -318,14 +319,12 @@
                         width: 120px;
                     }
                 }
-                
                 @media(max-width:768px) and (min-width:550px){
                     &{
                         font-size: 1.4rem;
                         width: 110px;
                     }
                 }
-                
                 @media(max-width:550px){
                     &{
                         font-size: 1.3rem;
@@ -345,7 +344,6 @@
                     align-self: center;
                 }
             }
-            
             @media(max-width:768px) and (min-width:550px){
                 &{
                     grid-column: 3/4;
@@ -353,7 +351,6 @@
                     align-self: center; 
                 }
             }
-
             @media(max-width:550px){
                 &{
                     grid-column: 2 / 3;
@@ -384,14 +381,12 @@
                         width: 120px;
                     }
                 }
-                
                 @media(max-width:768px) and (min-width:550px){
                     &{
                         font-size: 1.4rem;
                         width: 110px;
                     }
                 }
-                
                 @media(max-width:550px){
                     &{
                         font-size: 1.3rem;

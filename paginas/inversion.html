@@ -27,7 +27,7 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-ligth py-3">
       <div class="container-fluid">
-        <a class="navbar-brand Logo" href="index.html">
+        <a class="navbar-brand Logo" href="../index.html">
           <div class="logo">
             <img src="../imagenes/cohete1.png" alt="dibujo cohete" class="logo__imagen animate__animated animate__fadeInBottomLeft">
             <h1 class="logo__titulo animate__animated animate__lightSpeedInRight">CriptoCosmos</h1>
@@ -76,20 +76,54 @@
   </header>
 
   <div class="bannerInversion">
-    <h2 class="bannerInversion__titulo">Inversion</h2>
-    <p class="bannerInversion__texto">Inverti tus criptos de manera inteligente</p>
+    <h2 class="bannerInversion__titulo">Inverti tus criptos de manera inteligente</h2>
   </div>
   <section class="seccionInversion">
     <h3 class="seccionInversion__titulo">instrumentos de inversion</h3>
-    <p class="seccionInversion__texto">Contamos con variados instrumentos de inversion con distintos perfiles de riesgo para que elijas el que mejor se adapta a ti. A continuacion te mostramos algunos!</p>
+    <p class="seccionInversion__texto">Contamos con variados instrumentos de inversion con distintos perfiles de riesgo para que elijas el que mejor se adapta a vos. A continuacion te mostramos algunos!</p>
     <ul class="listaInversion">
-      <li class="opcionInversion">Ahorros Flexibles</li>
-      <li class="opcionInversion">Ahorros Bloqueados</li>
-      <li class="opcionInversion">Pool de Liquidez</li>
-      <li class="opcionInversion">Farms</li>
+      <li>
+        <button class="btn opcionInversion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+          Ahorros Flexibles
+        </button>
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body">
+            <p class="textoInversion">Tasas entre el 0.5 y 2%</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <button class="btn opcionInversion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+          Ahorros Bloqueados
+        </button>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body">
+            <p class="textoInversion">Tasas entre el 2 y 10%</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <button class="btn opcionInversion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+          Pool de Liquidez
+        </button>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body">
+            <p class="textoInversion">Tasas entre el 10 y 20%</p>
+        </div>
+      </li>
+      <li>
+        <button class="btn opcionInversion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+          Farms
+        </button>
+        <div class="collapse" id="collapseExample4">
+          <div class="card card-body">
+            <p class="textoInversion">Tasas superiores al 20%</p>
+          </div>
+        </div>
+      </li>
     </ul>    
   </section>
-  
+
  <!-- Footer -->
  <footer class="footer">
   <nav class="container">
